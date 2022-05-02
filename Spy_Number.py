@@ -1,12 +1,12 @@
 n=int(input())
+sum=0
 pro=1
-summ=0
 while n:
     r=n%10
-    pro=pro*r
-    summ+=r
     n=n//10
-if summ==pro:
+    sum+=r
+    pro*=r
+if sum==pro:
     print("Spy Number")
 else:
     print("Not Spy Number")
