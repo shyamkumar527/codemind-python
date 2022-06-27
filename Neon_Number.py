@@ -1,11 +1,12 @@
 n=int(input())
-pro=n*n
-res=0
-while pro:
-    r=pro%10
-    pro=pro//10
-    res+=r
-if n==res:
-    print("Neon Number")
+x=n
+n=n*n
+s=0
+while n:
+    r=n%10
+    s+=r
+    n//=10
+if s==x:
+    print('Neon Number')
 else:
-    print("Not Neon Number")
+    print('Not Neon Number')
