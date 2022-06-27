@@ -1,12 +1,15 @@
 n=int(input())
-while 1:
-    if n<10:
-        print(n)
+x=n
+while True:
+    sum=0
+    if x<10:
+        print(x)
         break
     else:
-        x=0
-        while n:
-            r=n%10
-            x+=r
-            n//=10
-        n=x
+        while x:
+            r=x%10
+            sum+=r
+            x//=10
+            if(x==0):
+                x=sum
+                break
