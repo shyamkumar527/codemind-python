@@ -1,5 +1,5 @@
 n=int(input())
-x=0
+a=0
 if n>0:
     while n!=1:
         if n%2==0:
@@ -9,10 +9,10 @@ if n>0:
         elif n%5==0:
             n//=5
         else:
+            a=1
             print('Not Ugly Number')
-            x=1
             break
-    if x==0:
+    if a==0:
         print('Ugly Number')
 else:
     print('Not Ugly Number')
