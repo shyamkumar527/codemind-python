@@ -1,5 +1,6 @@
 s=input()
-ans=0
-for i in s.split():
-    ans=i[0]
-print(ans)
+m=s.split()
+c=0
+for i in m:
+    c=i[0]
+print(c)
