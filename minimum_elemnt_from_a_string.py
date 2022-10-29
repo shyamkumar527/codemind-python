@@ -1,11 +1,9 @@
 s=input()
-l=[]
-c=0
-for i in s.split():
-    l.append(i)
-    c+=1
-ans=min(l[c-1])
-if (ans.lower()) in s:
-    print(ans.lower())
+l=list(s.split())
+for i in l:
+    j=i
+m=min(j)
+if m.lower() in j:
+    print(m.lower())
 else:
-    print(ans)
+    print(m)
