@@ -1,13 +1,13 @@
 s=input()
-c=0
-l=[]
+d={}
+ans=1
 for i in s:
-    if i not in l:
-        l.append(i)
+    if i not in d:
+        d[i]=1
     else:
-        c=1
+        ans=0
         break
-if c==0:
-    print('True')
+if ans==1:
+    print("True")
 else:
-    print('False')
+    print("False")
