@@ -1,7 +1,8 @@
 s=input()
-ans=0
-v='aeiouAEIOU'
-for i in s.split():
+m=s.split()
+c=0
+v="AEIOUaeiou"
+for i in m:
     if i[0] in v and i[-1] not in v:
-        ans+=1
-print(ans)
+        c+=1
+print(c)
