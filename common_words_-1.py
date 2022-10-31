@@ -1,9 +1,11 @@
 s1=input()
 s2=input()
-a=s1.lower()
-b=s2.lower()
-ans=0
-for i in a.split():
-    if i in b.split():
-        ans+=1
-print(ans)
+c=0
+c1=s1.lower()
+c2=s2.lower()
+l1=c1.split()
+l2=c2.split()
+for i in l1:
+    if i in l2:
+        c+=1
+print(c)
