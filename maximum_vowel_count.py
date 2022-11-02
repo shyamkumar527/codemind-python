@@ -1,9 +1,12 @@
 s=input()
+l=s.split()
+v="AEIOUaeiou"
 ans=0
-for i in s.split():
+for i in l:
     c=0
-    for j in i:
-        if j in 'aeiouAEIOU':
+    le=len(i)
+    for j in range(le):
+        if i[j] in v:
             c+=1
     if c>ans:
         ans=c
