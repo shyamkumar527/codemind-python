@@ -1,9 +1,8 @@
 s=input()
-c=0
-for i in s.split():
-    if c%2==0:
-        print(i[::-1],end=' ')
-        c+=1
+l=s.split()
+for i in range(len(l)):
+    if i%2==0:
+        x=l[i]
+        print(x[-1::-1],end=" ")
     else:
-        print(i,end=' ')
-        c+=1
+        print(l[i],end=" ")
