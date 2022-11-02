@@ -1,8 +1,9 @@
 s=input()
-ans=100
-for i in s.split():
+v="AEIOUaeiou"
+l=s.split()
+for i in l:
     c=0
     for j in i:
-        if j in 'aeiouAEIOU':
+        if j in v:
             c+=1
-    print(c,end=' ')
+    print(c,end=" ")
