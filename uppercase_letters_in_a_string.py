@@ -1,6 +1,7 @@
 s=input()
-c=0
+val=0
+v="QWERTYUIOPASDFGHJKLZXCVBNM"
 for i in s:
-    if i.isupper():
-        c+=1
-print(c)
+    if i in v:
+        val+=1
+print(val)
