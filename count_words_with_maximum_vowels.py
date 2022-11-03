@@ -1,17 +1,20 @@
 s=input()
-ans=res=0
-for i in s.split():
+v="AEIOUaeiou"
+l=s.split()
+ans=0
+val=0
+for i in l:
     c=0
     for j in i:
-        if j in 'aeiouAEIOU':
+        if j in v:
             c+=1
     if c>ans:
         ans=c
-for i in s.split():
+for i in l:
     c=0
     for j in i:
-        if j in 'aeiouAEIOU':
+        if j in v:
             c+=1
     if c==ans:
-        res+=1
-print(res)
+        val+=1
+print(val)
