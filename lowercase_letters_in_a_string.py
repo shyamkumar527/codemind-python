@@ -1,6 +1,7 @@
 s=input()
-c=0
+val=0
+v="qwertyuiopasdfghjklzxcvbnm"
 for i in s:
-    if i.islower():
-        c+=1
-print(c)
+    if i in v:
+        val+=1
+print(val)
