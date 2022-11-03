@@ -1,7 +1,9 @@
 s=input()
-ans=0
-for i in s.split():
+l=s.split()
+val=0
+v="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLXCVBNM1234567890"
+for i in l:
     for j in i:
-        if(j.isalpha()==0):
-            ans+=1
-print(ans)
+        if j not in v:
+            val+=1
+print(val)
