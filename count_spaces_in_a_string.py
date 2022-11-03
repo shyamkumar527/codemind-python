@@ -1,6 +1,6 @@
 s=input()
-c=0
+val=0
 for i in s:
-    if i==' ':
-        c+=1
-print(c)
+    if i==" ":
+        val+=1
+print(val)
