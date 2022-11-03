@@ -1,6 +1,7 @@
 s=input()
-ans=0
-for i in s.split():
+l=s.split()
+val=0
+for i in l:
     for j in i:
-        ans+=1
-print(ans)
+        val+=1
+print(val)
