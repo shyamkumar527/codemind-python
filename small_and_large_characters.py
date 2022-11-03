@@ -1,4 +1,4 @@
 s=input()
-for i in s.split():
-    print(min(i),end=' ')
-    print(max(i),end=' ')
+l=s.split()
+for i in l:
+    print(min(i),max(i),end=" ")
