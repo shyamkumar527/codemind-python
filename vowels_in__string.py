@@ -1,10 +1,12 @@
 s=input()
+ans=0
+v="AEIOUaeiou"
 l=[]
-ans=-1
 for i in s:
-    if i in 'aeiouAEIOU' and i not in l:
+    if i in v and i not in l:
         l.append(i)
-        print(i,end=' ')
-        ans=1
-if ans==-1:
-    print('-1')
+if len(l)>0:
+    ans=1
+    print(*l)
+if ans==0:
+    print("-1")
