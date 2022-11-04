@@ -1,7 +1,7 @@
 s=input()
-l=0
-for i in s.split():
-    le=len(i)
-    if le>l:
-        l=le
-print(l)
+l=s.split()
+ans=0
+for i in l:
+    if len(i)>ans:
+        ans=len(i)
+print(ans)
