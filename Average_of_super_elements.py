@@ -1,16 +1,14 @@
 n=int(input())
+val=c=0
 arr=list(map(int,input().split()))
 l=[]
-ans=c=0
 for i in arr:
     if i not in l:
-        l.append(i)
-        x=arr.count(i)
-        if x==i:
-            ans+=i
+        if i==arr.count(i):
+            val+=i
             c+=1
-if c>0:
-    res=ans/c
-    print('%.2f' %res)
+        l.append(i)
+if c!=0:
+    print('%.2f' %(val/c))
 else:
-    print('-1')
+    print("-1")
