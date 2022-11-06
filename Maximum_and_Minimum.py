@@ -1,15 +1,12 @@
 n=int(input())
+val=c=0
 arr=list(map(int,input().split()))
 l=[]
-c=0
 for i in arr:
-    x=arr.count(i)
-    if x==i and i not in l:
-        c=1
+    if i==arr.count(i):
         l.append(i)
-if c==0:
-    print('-1')
+        c=1
+if c!=0:
+    print(min(l),max(l))
 else:
-    mi=min(l)
-    ma=max(l)
-    print(mi,ma)
+    print("-1")
