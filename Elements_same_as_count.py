@@ -1,12 +1,12 @@
 n=int(input())
 arr=list(map(int,input().split()))
 l=[]
-c=0
+ans=0
 for i in arr:
-    x=arr.count(i)
-    if x==i and i not in l:
+    if i not in l:
         l.append(i)
-        c=1
-        print(i,end=' ')
-if c==0:
-    print('-1')
+        if arr.count(i)==i:
+            print(i,end=" ")
+            ans=1
+if ans==0:
+    print("-1")
