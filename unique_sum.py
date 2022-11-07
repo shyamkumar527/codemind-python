@@ -1,9 +1,9 @@
 n=int(input())
 arr=list(map(int,input().split()))
-res=0
 l=[]
-for i in range(n):
-    if arr[i] not in l:
-        l.append(arr[i])
-        res+=arr[i]
-print(res)
+ans=0
+for i in arr:
+    if i not in l:
+        l.append(i)
+        ans+=i
+print(ans)
