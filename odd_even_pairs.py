@@ -1,28 +1,24 @@
 n=int(input())
 arr=list(map(int,input().split()))
-even=[]
-odd=[]
-e=o=0
+e=[]
+o=[]
+ev=od=0
 for i in arr:
     if i%2==0:
-        even.append(i)
+        e.append(i)
+        ev+=1
     else:
-        odd.append(i)
-evenlen=len(even)
-oddlen=len(odd)
-for i in range(n):
-    if e>=evenlen and o>=oddlen:
+        o.append(i)
+        od+=1
+i=j=0
+while(1):
+    if i==ev and j==od:
         break
-    elif e>=evenlen:
-        print(odd[o],end=' ')
-        o+=1
-    elif o>=oddlen:
-        print(even[e],end=' ')
-        e+=1
-    else:
-        print(odd[o],end=' ')
-        o+=1
-        print(even[e],end=' ')
-        e+=1
-if n%2!=0:
-    print('0')
+    if j<od:
+        print(o[j],end=" ")
+        j+=1
+    if i<ev:
+        print(e[i],end=" ")
+        i+=1
+if n%2==1:
+    print("0")
